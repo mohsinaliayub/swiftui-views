@@ -11,17 +11,18 @@ struct ScopeAndOverriding: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("Refactoring")
-                .font(.largeTitle)
+                .font(.largeTitle) // Overrides the parent view's modifier
             Text("Reusing Modifiers")
-                .font(.title)
+//                .font(.title)
                 .foregroundStyle(.gray)
             Text("You can put common modifiers on the parent views to be applied to all children views.")
-                .font(.title)
+//                .font(.title)
                 .frame(maxWidth: .infinity)
                 .foregroundStyle(.white)
                 .padding()
                 .background(Color.blue)
         }
+        .font(.title) // Move the modifier to parent view
     }
 }
 
