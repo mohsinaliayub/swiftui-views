@@ -24,7 +24,7 @@ struct Layers: View {
                 .background(Color.red.opacity(0.3)) // Layer behind image
                 .background(Color.yellow.opacity(0.3)) // Layer behind red
                 .background(Color.blue.opacity(0.3)) // Layer behind yellow
-                .overlay(Text("Yosemite")) // Layer on top of image
+                .overlay(Text("Yosemite").font(.body)) // Layer on top of image
             
             Image("Layers")
         }
